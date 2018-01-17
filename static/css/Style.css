@@ -259,8 +259,11 @@ button:focus {
 }
 
 .u-responsive-img {
-  max-width: 100%;
-  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: scale-down;
 }
 
 .u-responsive-img-full {
@@ -380,7 +383,7 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .u-padding-top-huge {
-    padding-top: 6.875rem;
+    padding-top: 8.875rem;
   }
 }
 

@@ -1186,6 +1186,10 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
+  .uno {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
   .section-services-item {
     width: 25%;
     display: -webkit-box;

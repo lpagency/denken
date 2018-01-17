@@ -1213,7 +1213,8 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .section-services-item-icon {
-    width: 3.75rem;
+    max-width: 130px;
+    max-height: 130px;
   }
 }
 

@@ -147,6 +147,7 @@ button:focus {
 @media screen and (min-width: 768px) {
   .heading-small-2 {
     font-size: 1.25rem;
+    font-weight: 200;
   }
 }
 
@@ -322,6 +323,7 @@ button:focus {
 @media screen and (min-width: 768px) {
   .u-margin-bottom-big {
     margin-bottom: 4.375rem;
+    font-weight: 200;
   }
 }
 
@@ -451,6 +453,7 @@ button:focus {
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    max-width: 10px;
   }
 }
 
@@ -678,7 +681,9 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .figure-img {
-    width: 60%;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: scale-down;
     margin-right: 4.375rem;
     margin-bottom: 0;
   }

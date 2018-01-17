@@ -14,6 +14,21 @@
 {% end %}
 
 {% block javascript %}
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        var tag = $(".tag").html();
+        if(tag.indexOf("historia"))
+        {
+            $(".heading-med").html("HISTORIAS");
+        }
+
+        if(tag.indexOf("metodologia"))
+        {
+            $(".heading-med").html("METODOLOGÍAS");
+        }
+    });
+</script>
 {% end %}
 
 
@@ -41,7 +56,8 @@
 
     <section class="u-padding-top-huge u-padding-bottom-huge u-position-relative section-services">
         <div class="title title-secondary banner-title">
-            <h2 class="heading heading-med heading-font-main-reg">METODOLOGÍAS</h2>
+            <h2 class="heading heading-med heading-font-main-reg"></h2>
+            <div class="hidden tag">{{ article["tags"] }}</div>
         </div>
         <div class="container">
             <div class="row">
@@ -62,7 +78,7 @@
                     <figure class="u-margin-bottom-big figure">
                         <img src="{{ article["thumb_500"] }}" data-original="{{ article["url"] }}" alt="Proceso de Design Thinking" class="figure-img">
                         <figcaption class="figure-caption">
-                            <p class="paragraph paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary">Ti apiet, eossus non estrum sus, consed quidusc iminto cum quiatur reprovidus aut vent andant resequatur?</p>
+                            <div class="{{editabletext}} paragraph paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary" text-id="{{ site.name + 'text_footer_1_2' }}">{{ read_text(site.name +  'text_footer_1_2') }}</div>
                         </figcaption>
                     </figure>
                 </div>

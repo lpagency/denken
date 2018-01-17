@@ -1219,6 +1219,7 @@ button:focus {
   .section-services-item-icon {
     max-width: 130px;
     max-height: 130px;
+    object-fit: scale-down;
   }
 }
 

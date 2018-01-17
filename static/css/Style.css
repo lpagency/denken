@@ -264,7 +264,7 @@ button:focus {
 }
 
 .u-responsive-img-full {
-  width: 225px;
+  width: 150px;
   height: 140px;
   object-fit: contain;
 }

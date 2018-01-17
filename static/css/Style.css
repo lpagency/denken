@@ -263,8 +263,9 @@ button:focus {
 }
 
 .u-responsive-img-full {
-  width: 100%;
-  height: auto;
+  width: 225px;
+  height: 140px;
+  object-fit: contain;
 }
 
 .u-position-relative {
@@ -1200,8 +1201,8 @@ button:focus {
 }
 
 .section-services-item-icon {
-  width: 5rem;
-  height: auto;
+  width: 130px;
+  height: 130px;
 }
 
 @media screen and (min-width: 768px) {

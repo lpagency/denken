@@ -466,8 +466,6 @@ button:focus {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  min-width: 0;
-  min-height: 0;
 }
 
 .banner-img {

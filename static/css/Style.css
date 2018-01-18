@@ -502,9 +502,11 @@ button:focus {
 }
 
 .logo-img {
-  width: 68px;
-  height: 14px;
-  object-fit: contain;
+    width: 125px;
+    height: 35px;
+    object-fit: contain;
+    position: relative;
+    right: 40px;
 }
 
 /* *** /[Logo]*** */

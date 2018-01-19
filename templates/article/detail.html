@@ -18,7 +18,6 @@
     $(document).ready(function()
     {
         var tag = $(".tag").html();
-        var text = [];
 
         if(tag.indexOf("historia"))
         {
@@ -29,11 +28,11 @@
             $(".heading-med").html("METODOLOGIAS");
         }
 
-        text = tag.split(",");
-
-        var a = text.indexOf("texto");
-
-        console.log(a);
+        if(tag.indexOf("texto"))
+        {
+            tag.replace("metodologia", "");
+            console.log(tag);
+        }
     });
 </script>
 {% end %}

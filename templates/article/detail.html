@@ -15,10 +15,12 @@
 
 {% block javascript %}
 <script type="text/javascript">
-    $(document).ready(function()
+    $(document).ready(function(article)
     {
         var tag = $(".tag").html();
-        console.log(tag);
+
+        console.log(article);
+
         if(tag.indexOf("historia"))
         {
             $(".heading-med").html("HISTORIAS");
@@ -27,6 +29,11 @@
         {
             $(".heading-med").html("METODOLOGIAS");
         }
+
+        // if(tag.indexOf("texto: ") || tag.indexOf("texto:"))
+        // {
+
+        // }
     });
 </script>
 {% end %}

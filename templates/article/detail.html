@@ -24,13 +24,11 @@
             $(".heading-med").html("");
             $(".heading-med").html("METODOLOGIAS");
         }
-        else{
-            if(tag.indexOf("historia"))
-            {
-                console.log(tag);
-                $(".heading-med").html("");
-                $(".heading-med").html("HISTORIAS");
-            }
+        if(tag.indexOf("historia"))
+        {
+            console.log(tag);
+            $(".heading-med").html("");
+            $(".heading-med").html("HISTORIAS");
         }
 
         //TAG "TEXTO: ..." DETERMINA EL TEXTO AZUL DE ABAJO

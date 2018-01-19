@@ -33,6 +33,11 @@
   margin-left: 2rem !important;
 }
 
+.bot{
+  top: 20px;
+  position: relative;
+}
+
 /* *** /[Imports]*** */
 /* ***[Estilos base]*** */
 html,

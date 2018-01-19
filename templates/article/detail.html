@@ -28,6 +28,8 @@
             $(".heading-med").html("METODOLOGIAS");
         }
 
+        //TAG "TEXTO: ..." DETERMINA EL TEXTO AZUL DE ABAJO
+
         if(tag.indexOf("texto"))
         {
             tag = tag.replace("metodologia", "");
@@ -41,7 +43,7 @@
             tag = tag.replace("'", "");
             tag = tag.replace(",", "");
             tag = tag.replace("texto:", "");
-            console.log(tag);
+            $(".tags-text").html(tag);
         }
     });
 </script>
@@ -94,7 +96,7 @@
                     <figure class="u-margin-bottom-big figure">
                         <img src="{{ article["thumb_500"] }}" data-original="{{ article["url"] }}" alt="Proceso de Design Thinking" class="figure-img">
                         <figcaption class="figure-caption">
-                            <p class="paragraph paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary"></p>
+                            <p class="paragraph tags-text paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary"></p>
                         </figcaption>
                     </figure>
                 </div>

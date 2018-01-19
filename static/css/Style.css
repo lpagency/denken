@@ -20,6 +20,11 @@
   right: 1200px !important;
 }
 
+.art-h{
+  height: 238px;
+  overflow: hidden;
+}
+
 .ban-lapiz{
   top: 120px !important;
 }

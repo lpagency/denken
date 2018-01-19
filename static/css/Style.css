@@ -21,7 +21,7 @@
 }
 
 .art-h{
-  height: 238px;
+  max-height: 238px;
   overflow: hidden;
 }
 

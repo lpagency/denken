@@ -31,10 +31,9 @@
 
         text = tag.split(",");
 
-        if(text.indexOf(" 'texto: ") || text.indexOf(" 'texto:"))
-        {
-            console.log(text[text.indexOf(" 'texto:")]);
-        }
+        var a = text.indexOf("texto");
+
+        console.log(a);
     });
 </script>
 {% end %}

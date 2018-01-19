@@ -15,11 +15,11 @@
 
 {% block javascript %}
 <script type="text/javascript">
-    $(document).ready(function(article)
+    $(document).ready(function()
     {
         var tag = $(".tag").html();
 
-        console.log(article);
+        console.log(article["tags"]);
 
         if(tag.indexOf("historia"))
         {

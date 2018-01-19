@@ -20,12 +20,11 @@
         var tag = $(".tag").html();
 
         $(".heading-med").html(" ");
-        if(tag.indexOf("metodologia"))
+        if(tag.search("metodologia") > -1)
         {
-            console.log(tag);
             $(".heading-med").html("METODOLOGIAS");
         }
-        if(tag.indexOf("historia"))
+        if(tag.search("historia") > -1)
         {
             console.log(tag);
             $(".heading-med").html("HISTORIAS");

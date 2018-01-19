@@ -18,6 +18,7 @@
     $(document).ready(function()
     {
         var tag = $(".tag").html();
+        console.log(tag);
         if(tag.indexOf("historia"))
         {
             $(".heading-med").html("HISTORIAS");
@@ -77,7 +78,7 @@
                     <figure class="u-margin-bottom-big figure">
                         <img src="{{ article["thumb_500"] }}" data-original="{{ article["url"] }}" alt="Proceso de Design Thinking" class="figure-img">
                         <figcaption class="figure-caption">
-                            <div class="{{editabletext}} paragraph paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary" text-id="{{ site.name + 'text_detail_1_2' }}">{{ read_text(site.name +  'text_detail_1_2') }}</div>
+                            <p class="paragraph paragraph-font-accent paragraph-med u-weight-light u-style-italic u-color-secondary"></p>
                         </figcaption>
                     </figure>
                 </div>

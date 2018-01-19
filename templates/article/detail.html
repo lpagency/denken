@@ -31,6 +31,10 @@
         if(tag.indexOf("texto"))
         {
             tag = tag.replace("metodologia", "");
+            tag = tag.replace("historia", "");
+            tag = tag.replace("[", "");
+            tag = tag.replace("]", "");
+            tag = tag.replace("'", "");
             console.log(tag);
         }
     });

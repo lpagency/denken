@@ -18,8 +18,7 @@
     $(document).ready(function()
     {
         var tag = $(".tag").html();
-
-        console.log(article["tags"]);
+        var text = [];
 
         if(tag.indexOf("historia"))
         {
@@ -30,10 +29,10 @@
             $(".heading-med").html("METODOLOGIAS");
         }
 
-        // if(tag.indexOf("texto: ") || tag.indexOf("texto:"))
-        // {
-
-        // }
+        if(tag.indexOf("texto: ") || tag.indexOf("texto:"))
+        {
+            tag.split(",");
+        }
     });
 </script>
 {% end %}

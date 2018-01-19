@@ -31,9 +31,9 @@
 
         text = tag.split(",");
 
-        if(text.find("texto: ") != -1 || text.find("texto:") != -1)
+        for(x in text)
         {
-            console.log(text.find("texto: "));
+            console.log(text[x]);
         }
     });
 </script>

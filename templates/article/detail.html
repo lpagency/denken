@@ -31,15 +31,10 @@
 
         text = tag.split(",");
 
-        if(text.indexOf("texto: "))
+        if(text.indexOf("texto: ") || text.indexOf("texto:"))
         {
-            console.log(text.indexOf("texto: "));
+            console.log("aaa");
         }
-
-        // for(x in text)
-        // {
-        //     console.log(text[x]);
-        // }
     });
 </script>
 {% end %}

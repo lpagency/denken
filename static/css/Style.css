@@ -25,6 +25,10 @@
   overflow: hidden;
 }
 
+div.image-upload input {
+  width: 20px;
+}
+
 .ban-lapiz{
   top: 120px !important;
 }

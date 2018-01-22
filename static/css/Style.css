@@ -38,7 +38,7 @@ div.image-upload input {
 }
 
 .bot{
-  top: 30px;
+  top: 40px;
   position: relative;
 }
 
@@ -1193,6 +1193,10 @@ button:focus {
   .section-services-group + .section-services-group .section-services-item:first-child {
     padding-top: 0;
     border-top: 0;
+  }
+
+  .un-t{
+    margin-top: 40px;
   }
 }
 

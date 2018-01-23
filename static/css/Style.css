@@ -27,6 +27,7 @@
 
 .qs-txt {
     font-family: "Lato", "Helvetica", "Arial", sans-serif;
+    text-align: justify;
 }
 
 div.image-upload input {

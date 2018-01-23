@@ -25,6 +25,10 @@
   overflow: hidden;
 }
 
+.qs-txt {
+    font-family: "Lato", "Helvetica", "Arial", sans-serif;
+}
+
 div.image-upload input {
   width: 20px;
 }

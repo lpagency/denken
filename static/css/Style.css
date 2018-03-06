@@ -666,7 +666,7 @@ button:focus {
 /* ***[Title]*** */
 .title {
   text-align: center;
-  background-image: url("https://84static.loadingplay.com/static/images/711c2043d691d9fd0048cf0437346fd3_bubblebgprimary.svg");
+  background-image: url("https://cdn.loadingplay.com/static/images/782887c472eeeee827e4e66aaba2766f_bubblebgprimary.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -682,7 +682,7 @@ button:focus {
 }
 
 .title-secondary {
-  background-image: url("https://84static.loadingplay.com/static/images/27aefa72320649a19b44b5b9d0064058_bubblebgsecondary.svg");
+  background-image: url("https://cdn.loadingplay.com/static/images/603035e108878895783ad2c28734c4a0_bubblebgsecondary.png");
 }
 
 /* *** /[Title]*** */

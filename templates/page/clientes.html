@@ -14,6 +14,18 @@
 {% end %}
 
 {% block javascript %}
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $(".parrafo-clientes").each(function()
+        {
+            if($(this).html() == "")
+            {
+                $(this).parent().children(".divider").addClass("hidden");
+            }
+        });
+    });
+</script>
 {% end %}
 
 
@@ -61,7 +73,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_1' }}">{{ read_text(site.name +  'text_client_1') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_1' }}">{{ read_text(site.name +  'text_client_1') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_1_1' }}">{{ read_text(site.name +  'text_client_1_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -79,7 +91,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_2' }}">{{ read_text(site.name +  'text_client_2') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_2' }}">{{ read_text(site.name +  'text_client_2') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_2_1' }}">{{ read_text(site.name +  'text_client_2_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -97,7 +109,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_3' }}">{{ read_text(site.name +  'text_client_3') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_3' }}">{{ read_text(site.name +  'text_client_3') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_3_1' }}">{{ read_text(site.name +  'text_client_3_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -115,7 +127,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_4' }}">{{ read_text(site.name +  'text_client_4') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_4' }}">{{ read_text(site.name +  'text_client_4') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_4_1' }}">{{ read_text(site.name +  'text_client_4_1') }}</div>
                     </div>
                 </div>
@@ -135,7 +147,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_5' }}">{{ read_text(site.name +  'text_client_5') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_5' }}">{{ read_text(site.name +  'text_client_5') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_5_1' }}">{{ read_text(site.name +  'text_client_5_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -153,7 +165,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_6' }}">{{ read_text(site.name +  'text_client_6') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_6' }}">{{ read_text(site.name +  'text_client_6') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_6_1' }}">{{ read_text(site.name +  'text_client_6_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -171,7 +183,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_7' }}">{{ read_text(site.name +  'text_client_7') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_7' }}">{{ read_text(site.name +  'text_client_7') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_7_1' }}">{{ read_text(site.name +  'text_client_7_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -189,7 +201,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_8' }}">{{ read_text(site.name +  'text_client_8') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_8' }}">{{ read_text(site.name +  'text_client_8') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_8_1' }}">{{ read_text(site.name +  'text_client_8_1') }}</div>
                     </div>
                 </div>
@@ -209,7 +221,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_9' }}">{{ read_text(site.name +  'text_client_9') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_9' }}">{{ read_text(site.name +  'text_client_9') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_9_1' }}">{{ read_text(site.name +  'text_client_9_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -227,7 +239,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_10' }}">{{ read_text(site.name +  'text_client_10') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_10' }}">{{ read_text(site.name +  'text_client_10') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_10_1' }}">{{ read_text(site.name +  'text_client_10_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -245,7 +257,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_11' }}">{{ read_text(site.name +  'text_client_11') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_11' }}">{{ read_text(site.name +  'text_client_11') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_11_1' }}">{{ read_text(site.name +  'text_client_11_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -263,7 +275,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_12' }}">{{ read_text(site.name +  'text_client_12') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_12' }}">{{ read_text(site.name +  'text_client_12') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_12_1' }}">{{ read_text(site.name +  'text_client_12_1') }}</div>
                     </div>
                 </div>
@@ -283,7 +295,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_13' }}">{{ read_text(site.name +  'text_client_13') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_13' }}">{{ read_text(site.name +  'text_client_13') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_13_1' }}">{{ read_text(site.name +  'text_client_13_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -301,7 +313,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_14' }}">{{ read_text(site.name +  'text_client_14') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_14' }}">{{ read_text(site.name +  'text_client_14') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_14_1' }}">{{ read_text(site.name +  'text_client_14_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -319,7 +331,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_15' }}">{{ read_text(site.name +  'text_client_15') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_15' }}">{{ read_text(site.name +  'text_client_15') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_15_1' }}">{{ read_text(site.name +  'text_client_15_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -337,7 +349,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_16' }}">{{ read_text(site.name +  'text_client_16') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_16' }}">{{ read_text(site.name +  'text_client_16') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_16_1' }}">{{ read_text(site.name +  'text_client_16_1') }}</div>
                     </div>
                 </div>
@@ -357,7 +369,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_17' }}">{{ read_text(site.name +  'text_client_17') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_17' }}">{{ read_text(site.name +  'text_client_17') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_17_1' }}">{{ read_text(site.name +  'text_client_17_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -375,7 +387,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_18' }}">{{ read_text(site.name +  'text_client_18') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_18' }}">{{ read_text(site.name +  'text_client_18') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_18_1' }}">{{ read_text(site.name +  'text_client_18_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -393,7 +405,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_19' }}">{{ read_text(site.name +  'text_client_19') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_19' }}">{{ read_text(site.name +  'text_client_19') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_19_1' }}">{{ read_text(site.name +  'text_client_19_1') }}</div>
                     </div>
                     <div class="col-xs-12 col-sm-3 section-clients-item">
@@ -411,7 +423,7 @@
                             </div>
                         </div>
                         <div class="u-margin-vertical-smallest divider divider-gray-light divider-big divider-short"></div>
-                        <div class="{{editabletext}} paragraph u-color-secondary" text-id="{{ site.name + 'text_client_20' }}">{{ read_text(site.name +  'text_client_20') }}</div>
+                        <div class="{{editabletext}} paragraph u-color-secondary parrafo-clientes" text-id="{{ site.name + 'text_client_20' }}">{{ read_text(site.name +  'text_client_20') }}</div>
                         <div class="{{editabletext}} paragraph paragraph-small" text-id="{{ site.name + 'text_client_20_1' }}">{{ read_text(site.name +  'text_client_20_1') }}</div>
                     </div>
                 </div>

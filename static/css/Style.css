@@ -550,6 +550,8 @@ button:focus {
 
 .menu-item {
   position: relative;
+  width: 91px;
+  line-height: 0em;
 }
 
 .menu-item + .menu-item {
@@ -657,7 +659,7 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .menu-link {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     max-width: 88px;
   }
 }

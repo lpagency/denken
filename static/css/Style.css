@@ -570,6 +570,7 @@ button:focus {
 
 @media screen and (min-width: 992px) {
   .menu-item + .menu-item {
+    text-align: center;
     padding-left: 1.875rem;
     margin-left: 1.875rem;
   }

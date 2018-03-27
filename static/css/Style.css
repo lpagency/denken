@@ -20,6 +20,18 @@
   right: 1200px !important;
 }
 
+.titulo-equipos{
+  background-color: #01adae;
+  height: 44px;
+  text-align: center;
+  padding-top: 11px;
+  color: white;
+}
+
+.separacion {
+    margin-bottom: 20px;
+}
+
 .art-h{
   max-height: 238px;
   overflow: hidden;
@@ -28,6 +40,15 @@
 .qs-txt {
     font-family: "Lato", "Helvetica", "Arial", sans-serif;
     text-align: justify;
+}
+
+.equipo-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.linea-equipo{
+  border-top: 2px solid #e9eae9;
 }
 
 div.image-upload input {
@@ -988,6 +1009,31 @@ button:focus {
   display: none;
 }
 
+@media screen and (max-width: 1024px){
+  .header-nav{
+    left: inherit !important;
+  }
+
+  .header-messages {
+    left: -10px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header-nav{
+    width: 100%;
+  }
+  .menu-item{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .left-border{
+    border-left: 2px solid #e9eae9;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-nav {
     left: 90px;
@@ -1382,12 +1428,6 @@ button:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .section-team-group + .section-team-group {
-    margin-top: 3.4375rem;
-  }
-}
-
 .section-team-item {
   display: block;
   padding-top: 1.667rem;
@@ -1420,9 +1460,7 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .section-team-item + .section-team-item {
-    border-left: 4px solid #E9E9E9;
-    margin-left: 1.25rem;
-    padding-left: 1.25rem;
+    border-left: 2px solid #E9E9E9;
   }
 }
 

@@ -256,7 +256,7 @@ button:focus {
 
 .paragraph-font-accent {
   font-family: "Lato", "Helvetica", "Arial", sans-serif;
-  width: inherit;
+  width: 100%;
 }
 
 /* *** /[Tipografía]*** */
@@ -1032,7 +1032,19 @@ button:focus {
   .left-border{
     border-left: 2px solid #e9eae9;
   }
+  .logo-img{
+    right: 19px;
+  }
+
+  .header-nav {
+    left: 0px;
+  }
+
+  .header-messages {
+    left: 0px !important;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   .header-nav {

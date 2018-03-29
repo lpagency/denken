@@ -21,11 +21,34 @@
 }
 
 .titulo-equipos{
-  background-color: #01adae;
+  background-repeat: no-repeat;
   height: 44px;
   text-align: center;
-  padding-top: 11px;
   color: white;
+}
+
+.img-equipos{
+    width: 194%;
+    position: relative;
+    left: -50px;
+    top: -2px;
+}
+
+.img-equipos-2 {
+    width: 136%;
+    position: relative;
+    left: -50px;
+    top: -2px;
+}
+
+.texto-equipos-2{
+    position: relative;
+    top: -38px;
+}
+
+.texto-equipos-3 {
+    position: relative;
+    top: -35px;
 }
 
 .separacion {
@@ -1026,6 +1049,18 @@ button:focus {
   .menu-item{
     width: 100%;
   }
+
+  .texto-equipos-3 {
+      position: relative;
+      top: -30px;
+      left: -6px;
+  }
+
+  .texto-equipos-2 {
+      position: relative;
+      top: -34px;
+      left: -5px;
+  }
 }
 
 @media screen and (max-width: 414px){
@@ -1042,6 +1077,43 @@ button:focus {
 
   .header-messages {
     left: 0px !important;
+  }
+
+  .img-equipos {
+      width: 127%;
+      height: 45px;
+      position: relative;
+      left: -50px;
+      top: -2px;
+  }
+
+  .img-equipos-2 {
+      width: 100%;
+      position: relative;
+      left: inherit;
+      top: -2px;
+  }
+
+  .texto-equipos-3 {
+      position: relative;
+      top: -30px;
+      left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .img-equipos {
+      width: 127%;
+      height: 45px;
+      position: relative;
+      left: -40px;
+      top: -2px;
+  }
+
+  .texto-equipos-3 {
+      position: relative;
+      top: -26px;
+      left: 0px;
   }
 }
 

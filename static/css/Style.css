@@ -44,11 +44,18 @@
 .texto-equipos-2{
     position: relative;
     top: -38px;
-}
+    overflow: hidden;
+    min-height: 10px !important;
+    max-height: 21px;
+    text-align: center;}
 
 .texto-equipos-3 {
     position: relative;
     top: -35px;
+    min-height: 10px !important;
+    overflow: hidden;
+    text-align: center;
+    max-height: 26px;
 }
 
 .separacion {

@@ -20,9 +20,13 @@
         var tag = $(".tag").html();
 
         $(".heading-med").html(" ");
-        if(tag.search("metodologia") > -1)
+        if(tag.search("metodologias") > -1)
         {
             $(".heading-med").html("METODOLOGIAS");
+        }
+        if(tag.search("que hacemos") > -1)
+        {
+            $(".heading-med").html("QUE HACEMOS");
         }
         if(tag.search("historia") > -1)
         {
@@ -34,8 +38,9 @@
 
         if(tag.indexOf("texto"))
         {
-            tag = tag.replace("metodologia", "");
+            tag = tag.replace("metodologias", "");
             tag = tag.replace("historia", "");
+            tag = tag.replace("que hacemos", "");
             tag = tag.replace("[", "");
             tag = tag.replace("]", "");
             tag = tag.replace("'", "");

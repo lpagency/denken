@@ -23,15 +23,17 @@
         if(tag.search("metodologias") > -1)
         {
             $(".heading-med").html("METODOLOGIAS");
+            $(".metodologias_banner").removeClass("hidden");
         }
         if(tag.search("que hacemos") > -1)
         {
             $(".heading-med").html("QUE HACEMOS");
+            $(".que_hacemos_banner").removeClass("hidden");
         }
         if(tag.search("historia") > -1)
         {
-            console.log(tag);
             $(".heading-med").html("HISTORIAS");
+            $(".historia_banner").removeClass("hidden");
         }
 
         //TAG "TEXTO: ..." DETERMINA EL TEXTO AZUL DE ABAJO
@@ -65,7 +67,38 @@
 {% set editabletext = '' %}
 {% end %}
 
-    <section class="banner banner-bg-cover">
+<!--BANNER METODOLOGIAS-->
+    <section class="banner banner-bg-cover metodologias_banner hidden">
+        {% if is_admin %}
+            <div class="image-upload lapiz visible-movil ban-lapiz">
+                <label for="img_met_banner_1">
+                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                </label>
+                <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_met_banner_1" name="image" id="img_met_banner_1" >
+            </div>
+        {% end %}
+        <div class="base-logo">
+            <img id="{{ site.name }}_met_banner_1" src="{{ read_image(site.name + '_met_banner_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_met_banner_1',) }}'" class="banner-bg" alt="item">
+        </div>
+    </section>
+
+<!--BANNER QUE HACEMOS-->
+    <section class="banner banner-bg-cover que_hacemos_banner hidden">
+        {% if is_admin %}
+            <div class="image-upload lapiz visible-movil ban-lapiz">
+                <label for="img_met_banner_1">
+                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                </label>
+                <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_met_banner_1" name="image" id="img_met_banner_1" >
+            </div>
+        {% end %}
+        <div class="base-logo">
+            <img id="{{ site.name }}_met_banner_1" src="{{ read_image(site.name + '_met_banner_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_met_banner_1',) }}'" class="banner-bg" alt="item">
+        </div>
+    </section>
+
+<!--BANNER HISTORIA-->
+    <section class="banner banner-bg-cover historia_banner hidden">
         {% if is_admin %}
             <div class="image-upload lapiz visible-movil ban-lapiz">
                 <label for="img_met_banner_1">

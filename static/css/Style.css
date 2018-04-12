@@ -1677,4 +1677,25 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 991px)
+{
+  .texto-equipos-2
+  {
+    top: -33px;
+    left: -7px;
+  }
+
+  .texto-equipos-2
+  {
+    top: -30px;
+    left: -9px;
+  }
+
+  .section-team-item-img
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* *** /[Clients]*** */

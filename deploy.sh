@@ -1,7 +1,6 @@
 #!/bin/bash
 # @Author: Ricardo Silva
 
-
 DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 PROJECT="$(echo $(cut -d'/' -f1 <<< $(echo $DIRECTORY | rev) ) | rev)"
 tag=QA
@@ -10,6 +9,8 @@ WORKING_DIR="/var/www/agency"
 DEPLOY_KEY="$HOME/.ssh/deploy"
 DEPLOY_USER="deploy"
 SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/ondev.txt)
+
+echo $TAG
 
 # read configurations
 while [ "$1" != "" ]; do

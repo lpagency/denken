@@ -23,7 +23,7 @@ while [ "$1" != "" ]; do
 done
 
 # switch to production configuration
-if [[ $tag == "PROD" ]]; then
+if [[ $tag == "master" ]]; then
     SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/prod.txt)
 fi
 

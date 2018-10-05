@@ -3,12 +3,6 @@ python:
 - '2.7'
 install:
 - bash deploy.sh -t master -h
-deploy:
-- provider: script
-  script: bash deploy.sh -t $TRAVIS_TAG -h
-  on:
-    tags: true
-    all_branches: true
 before_install:
 - openssl aes-256-cbc -K $encrypted_aa98fb4b6b61_key -iv $encrypted_aa98fb4b6b61_iv
   -in deploy.enc -out $HOME/.ssh/deploy -d

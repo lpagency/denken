@@ -1,6 +1,8 @@
 language: python
 python:
 - '2.7'
+install:
+- echo "installed"
 deploy:
 - provider: script
   script: bash deploy.sh -t $TRAVIS_TAG -h

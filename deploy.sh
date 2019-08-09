@@ -9,8 +9,7 @@ WORKING_DIR="/var/www/agency"
 DEPLOY_KEY="$HOME/.ssh/deploy"
 DEPLOY_USER="deploy"
 SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/ondev.txt)
-
-echo $TAG
+SERVER_TAG="ondev"
 
 # read configurations
 while [ "$1" != "" ]; do
@@ -24,9 +23,19 @@ while [ "$1" != "" ]; do
 done
 
 # switch to production configuration
-if [[ $tag == "master" ]]; then
-    SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/prod.txt)
+if [[ $tag == "PROD" ]]; then
+    SERVER_TAG="app"
 fi
+
+SERVER_IPS=$(curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $DO_KEY" "https://api.digitalocean.com/v2/droplets?tag_name=$SERVER_TAG" | \
+python3 -c "
+import sys, json
+json_data = json.load(sys.stdin)
+for x in json_data['droplets']:
+    for n in x['networks']['v4']:
+        if n['type'] == 'public':
+            print(n['ip_address'])
+")
 
 # add hosts if neccesary
 if [[ $add_hosts ]]; then

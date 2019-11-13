@@ -1,6 +1,7 @@
 #!/bin/bash
 # @Author: Ricardo Silva
 
+
 DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 PROJECT="$(echo $(cut -d'/' -f1 <<< $(echo $DIRECTORY | rev) ) | rev)"
 tag=QA
@@ -8,8 +9,8 @@ add_hosts=
 WORKING_DIR="/var/www/agency"
 DEPLOY_KEY="$HOME/.ssh/deploy"
 DEPLOY_USER="deploy"
-SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/ondev.txt)
 SERVER_TAG="ondev"
+SERVER_IPS=$(curl -XGET https://loadingplay.github.io/deploy/ondev.txt)
 
 # read configurations
 while [ "$1" != "" ]; do
@@ -27,8 +28,12 @@ if [[ $tag == "PROD" ]]; then
     SERVER_TAG="app"
 fi
 
-SERVER_IPS=$(curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $DO_KEY" "https://api.digitalocean.com/v2/droplets?tag_name=$SERVER_TAG" | \
-python3 -c "
+# switch to production configuration
+echo -n "getting server ips..."
+for SERV_TAG in $SERVER_TAG
+do
+    tag_ips=$(curl -s -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $DO_KEY" "https://api.digitalocean.com/v2/droplets?tag_name=$SERV_TAG" | \
+    python3 -c "
 import sys, json
 json_data = json.load(sys.stdin)
 for x in json_data['droplets']:
@@ -36,6 +41,10 @@ for x in json_data['droplets']:
         if n['type'] == 'public':
             print(n['ip_address'])
 ")
+    SERVER_IPS+=" "
+    SERVER_IPS+=$tag_ips
+done
+echo "ok"
 
 # add hosts if neccesary
 if [[ $add_hosts ]]; then
